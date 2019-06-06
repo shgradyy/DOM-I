@@ -43,10 +43,16 @@ logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
 const navGet = document.getElementsByTagName('nav');
 const headLine = document.querySelectorAll('h1');
-const navImg = document.getElementById('logo-img');
-const ctaImg = document.getElementById('cta-img');
+
+const ctaPic = document.getElementById('cta-img');
+ctaPic.setAttribute('src', siteContent["cta"]["img-src"]);
+
 const middleImg = document.getElementById('middle-img');
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
 const mainContent = document.querySelectorAll('main-content');
 const textCont = querySelectorAll('text-content');
 const footer = getElementsByTagName('footer');
 const contact = querySelectorAll('contact');
+
+
