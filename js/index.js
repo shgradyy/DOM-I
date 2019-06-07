@@ -41,8 +41,11 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
-const navGet = document.getElementsByTagName('nav');
-const headLine = document.querySelectorAll('h1');
+
+
+
+
+
 
 const ctaPic = document.getElementById('cta-img');
 ctaPic.setAttribute('src', siteContent["cta"]["img-src"]);
@@ -50,9 +53,17 @@ ctaPic.setAttribute('src', siteContent["cta"]["img-src"]);
 const middleImg = document.getElementById('middle-img');
 middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
-const mainContent = document.querySelectorAll('main-content');
-const textCont = querySelectorAll('text-content');
-const footer = getElementsByTagName('footer');
-const contact = querySelectorAll('contact');
+const nav = document.querySelectorAll('nav');
+const item1 = nav[0]["childNodes"][0];
+const item2 = nav[0]["childNodes"][2];
+const item3 = nav[0]["childNodes"][4];
+const item4 = nav[0]["childNodes"][6];
+const item5 = nav[0]["childNodes"][8];
+const item6 = nav[0]["childNodes"][10];
 
-
+item1.textContent = siteContent["nav"]["nav-item-1"];
+item2.textContent = siteContent["nav"]["nav-item-2"];
+item3.textContent = siteContent["nav"]["nav-item-3"];
+item4.textContent = siteContent["nav"]["nav-item-4"];
+item5.textContent = siteContent["nav"]["nav-item-5"];
+item6.textContent = siteContent["nav"]["nav-item-6"];
