@@ -67,3 +67,15 @@ item3.textContent = siteContent["nav"]["nav-item-3"];
 item4.textContent = siteContent["nav"]["nav-item-4"];
 item5.textContent = siteContent["nav"]["nav-item-5"];
 item6.textContent = siteContent["nav"]["nav-item-6"];
+
+item1.style.color = "green";
+item2.style.color = "green";
+item3.style.color = "green";
+item4.style.color = "green";
+item5.style.color = "green";
+item6.style.color = "green";
+
+const button = document.getElementsByTagName('button');
+const buttonText = siteContent["cta"]["button"];
+
+
