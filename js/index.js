@@ -68,14 +68,27 @@ item4.textContent = siteContent["nav"]["nav-item-4"];
 item5.textContent = siteContent["nav"]["nav-item-5"];
 item6.textContent = siteContent["nav"]["nav-item-6"];
 
-item1.style.color = "green";
-item2.style.color = "green";
-item3.style.color = "green";
-item4.style.color = "green";
-item5.style.color = "green";
-item6.style.color = "green";
+item1.style.textContent.color = "green";
+item2.style.textContent.color = "green";
+item3.style.textContent.color = "green";
+item4.style.textContent.color = "green";
+item5.style.textContent.color = "green";
+item6.style.textContent.color = "green";
 
-const button = document.getElementsByTagName('button');
-const buttonText = siteContent["cta"]["button"];
+
+
+const button1 = document.querySelectorAll('.button');
+button1[0].textContent = siteContent["cta"]["button"]
+
+
+const ctaHandle = document.getElementsByClassName('.cta-text');
+ctaHandle.textContent = siteContent["cta"]["h1"];
+
+//-----------------------------------Extra nav tag
+const newNav = document.createElement('a');
+newNav.textContent = "Coupons";
+
+nav[0].appendChild(newNav);
+
 
 
